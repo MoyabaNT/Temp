@@ -6,8 +6,6 @@ import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2'
 import { RiTeamFill } from "react-icons/ri";
 import { SiBloglovin } from "react-icons/si";
 import { MdOutlineDriveFileMove } from "react-icons/md";
-import { IoBriefcaseOutline } from "react-icons/io5";
-import { FaRegUser } from "react-icons/fa";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false) //useState is used to track UI changes in the DOM
@@ -17,16 +15,14 @@ const Sidebar = () => {
 
   const items = [
     { title: 'Home', Icon: BiHomeSmile, href: 'Home' },
-    { title: 'About Us', Icon: RiTeamFill, href: 'About' },
+    { title: 'About', Icon: RiTeamFill, href: 'About' },
     { title: 'Services', Icon: MdOutlineDriveFileMove, href: 'Services' },
-    { title: 'Resources', Icon: IoBriefcaseOutline, href: 'Resources' },
-    { title: 'Blog', Icon: SiBloglovin, href: 'BlogPage' },
-    { title: 'Contact Us', Icon: HiOutlineChatBubbleBottomCenterText, href: 'Contacts' },
-    {title: 'Log In', Icon: FaRegUser, href: 'LogIn'}
+    { title: 'Blog', Icon: SiBloglovin, href: 'Blog' },
+    { title: 'Contact', Icon: HiOutlineChatBubbleBottomCenterText, href: 'Contacts' },
   ]
 
   return (
-    <div className=' h-16 fixed top-0 left-0 right-0 z-50 shadow-sm '>
+    <div className=' h-16 fixed top-0 left-0 right-0 z-50 shadow-sm bg-white '>
   
       {/**Nav bar */}
       <div className='hidden sm:block  '>

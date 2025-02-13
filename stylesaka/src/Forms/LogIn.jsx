@@ -10,7 +10,7 @@ const LogIn = () => {
 
   function vali(event) {
     event.preventDefault(); //prevents the form from submitting itself and crashing the page
-    alert("Thank you Ms " + username + " for submitting");
+    alert("Logged in as " + username);
     console.log(username, password, email);
 
         // Clear input fields after submission
