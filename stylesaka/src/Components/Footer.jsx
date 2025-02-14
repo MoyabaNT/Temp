@@ -42,7 +42,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="text-center mt-8 text-gray-400 text-sm">
+      <div className="text-center mt-8 text-white text-sm">
         &copy; 2025 Your Company Name. All rights reserved.
       </div>
     </div>

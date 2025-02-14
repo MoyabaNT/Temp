@@ -6,6 +6,7 @@ import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2'
 import { RiTeamFill } from "react-icons/ri";
 import { SiBloglovin } from "react-icons/si";
 import { MdOutlineDriveFileMove } from "react-icons/md";
+import Logo from '../assets/TheFol/design.png';
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false) //useState is used to track UI changes in the DOM
@@ -61,11 +62,11 @@ const Sidebar = () => {
             className='fixed bottom-0 left-0 right-0 top-0 z-40 bg-[rgba(114,111,113,0.2)] backdrop-blur-sm'
           ></div>
           <div
-            className="fixed top-0 bottom-0 left-0 z-50 w-full h-screen max-w-xs border-r-2 border-amber-700  text-amber-700"
+            className="fixed top-0 bottom-0 left-0 z-50 w-full h-screen max-w-xs border-r-2 border-amber-100 bg-amber-700 text-amber-100"
             ref={ref}
             aria-label="Sidebar"
           >
-            <div className='items-center justify-between p-5 border-b-2 border-amber-600'>
+            <div className='items-center justify-between p-5 border-b-2 border-amber-100'>
               <button
                 onClick={toggleSidebar}
                 aria-label="close sidebar"
@@ -73,6 +74,9 @@ const Sidebar = () => {
                 <IoArrowBackCircleOutline size={40} />
               </button>
   
+            </div>
+            <div className='flex justify-center items-center'>
+                <img src={Logo} alt="Logo" className='rounded-full object-cover w-70 mt-2 bg-amber-100'/>
             </div>
             <ul>
               {items.map((item) => {
@@ -82,7 +86,7 @@ const Sidebar = () => {
                     <a
                       onClick={toggleSidebar}
                       href={href}
-                      className="flex items-center justify-between gap-5 p-5 transition-all border-b-2 hover:bg-amber-900 border-amber-700"
+                      className="flex items-center justify-between gap-5 p-5 transition-all border-b-2 hover:bg-amber-900 border-amber-100"
                     >
                       <span>{title}</span>
                       <div>

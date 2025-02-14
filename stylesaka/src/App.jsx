@@ -8,6 +8,8 @@ import LogIn from "./Forms/LogIn";
 import SignUp from "./Forms/SignUp";
 import Blog from "./Components/Blog";
 import Services from "./Components/Services";
+import About from "./Components/About";
+import Contacts from "./Components/Contacts";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +20,8 @@ const router = createBrowserRouter(
     <Route path='/SignUp' element={<SignUp />} />
     <Route path='/Blog' element={<Blog />} />
     <Route path='/Services' element={<Services />} />
+    <Route path='/About' element={<About />} />
+    <Route path='/Contacts' element={<Contacts />} />
 
     </>
   )
